@@ -10,29 +10,8 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="emojiDictionary" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n3H-6Z-gDo">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="n3H-6Z-gDo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ftn-tm-LhG"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="n3H-6Z-gDo" secondAttribute="bottom" id="U0f-JX-9xk"/>
-                            <constraint firstAttribute="trailing" secondItem="n3H-6Z-gDo" secondAttribute="trailing" id="bAs-Oh-c5B"/>
-                            <constraint firstItem="n3H-6Z-gDo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bga-5A-Jgm"/>
-                        </constraints>
-                    </view>
                     <navigationItem key="navigationItem" id="v7U-68-Zr4"/>
                     <connections>
-                        <outlet property="emojiTable" destination="n3H-6Z-gDo" id="eBz-87-KiS"/>
                         <segue destination="bHZ-TT-VNI" kind="show" identifier="moveSegue" id="pGV-kf-XDM"/>
                     </connections>
                 </viewController>
@@ -72,6 +51,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emojiDefinition" destination="MQU-Av-3wJ" id="KoQ-i0-7NG"/>
                         <outlet property="emojiLabel" destination="t0s-eQ-b4U" id="qYg-ww-MIE"/>
                     </connections>
                 </viewController>
