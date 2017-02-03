@@ -12,27 +12,21 @@
     
     @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var emojiDefinition: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var birthYearLabel: UILabel!
     
-    var emoji = "NO EMOJI"
+    var emoji = Emoji()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         
-        emojiLabel.text = emoji
-        
-        if emoji == "💩" {
-            emojiDefinition.text = "something gross"
-        }else if emoji == "😎"{
-            emojiDefinition.text = "a cool person"
-        }else if emoji == "😈" {
-            emojiDefinition.text = "a happy evil person"
-        }else if emoji == "😂" {
-            emojiDefinition.text = "a person in tears from laughing too hard"
-        }else if emoji == "😘" {
-            emojiDefinition.text = "a person blowing a kiss"
-        }
+        emojiLabel.text = emoji.stringEmoji
+        birthYearLabel.text = "BirthYear = \(emoji.birthYear)"
+        categoryLabel.text = "Category = \(emoji.category)"
+        emojiDefinition.text = emoji.definition
+      
     }
     
     override func didReceiveMemoryWarning() {
@@ -40,6 +34,5 @@
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
+        
  }

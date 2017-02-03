@@ -11,10 +11,11 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="emojiDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zHI-nW-sht">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="v7U-68-Zr4"/>
                     <connections>
                         <outlet property="emojiTable" destination="zHI-nW-sht" id="pIa-Hs-nnV"/>
@@ -42,7 +43,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQU-Av-3wJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQU-Av-3wJ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeG-bF-bTH">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAo-qf-Axj">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,11 +63,18 @@
                         <constraints>
                             <constraint firstItem="MQU-Av-3wJ" firstAttribute="top" secondItem="t0s-eQ-b4U" secondAttribute="bottom" constant="50" id="2rR-Y7-dsb"/>
                             <constraint firstItem="t0s-eQ-b4U" firstAttribute="top" secondItem="ldm-s3-3Sr" secondAttribute="bottom" constant="40" id="5K1-qj-RYY"/>
+                            <constraint firstItem="WeG-bF-bTH" firstAttribute="top" secondItem="qAo-qf-Axj" secondAttribute="bottom" constant="20" id="8AE-eN-nua"/>
+                            <constraint firstItem="WeG-bF-bTH" firstAttribute="centerX" secondItem="XAs-LW-G5q" secondAttribute="centerX" id="G8b-aj-CIW"/>
+                            <constraint firstItem="qAo-qf-Axj" firstAttribute="top" secondItem="MQU-Av-3wJ" secondAttribute="bottom" constant="20" id="I9X-yq-TxB"/>
                             <constraint firstItem="t0s-eQ-b4U" firstAttribute="centerX" secondItem="XAs-LW-G5q" secondAttribute="centerX" id="IbV-yv-Hae"/>
+                            <constraint firstItem="WeG-bF-bTH" firstAttribute="centerX" secondItem="XAs-LW-G5q" secondAttribute="centerX" id="OKs-l6-6xT"/>
                             <constraint firstItem="MQU-Av-3wJ" firstAttribute="centerX" secondItem="XAs-LW-G5q" secondAttribute="centerX" id="OOa-uw-jEq"/>
+                            <constraint firstItem="qAo-qf-Axj" firstAttribute="centerX" secondItem="XAs-LW-G5q" secondAttribute="centerX" id="VwB-fX-Rh5"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="WeG-bF-bTH" id="RoX-WF-3b4"/>
+                        <outlet property="categoryLabel" destination="qAo-qf-Axj" id="bxX-nO-ruN"/>
                         <outlet property="emojiDefinition" destination="MQU-Av-3wJ" id="KoQ-i0-7NG"/>
                         <outlet property="emojiLabel" destination="t0s-eQ-b4U" id="qYg-ww-MIE"/>
                     </connections>
