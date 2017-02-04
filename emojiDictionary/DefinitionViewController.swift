@@ -25,7 +25,7 @@
         emojiLabel.text = emoji.stringEmoji
         birthYearLabel.text = "BirthYear = \(emoji.birthYear)"
         categoryLabel.text = "Category = \(emoji.category)"
-        emojiDefinition.text = emoji.definition
+        emojiDefinition.text = emoji.definition 
       
     }
     
