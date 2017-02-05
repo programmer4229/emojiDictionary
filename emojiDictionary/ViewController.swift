@@ -62,15 +62,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         let emoji2 = Emoji()
         emoji2.stringEmoji = "💩"
-        emoji2.birthYear = 2009
-        emoji2.category = "Smiley "
-        emoji2.definition = "something gross"
+        emoji2.birthYear = 2015
+        emoji2.category = "Smiley"
+        emoji2.definition = "a pile of poop"
         
         let emoji3 = Emoji()
-        emoji3.stringEmoji = "😈"
+        emoji3.stringEmoji = "🐼"
         emoji3.birthYear = 2010
-        emoji3.category = "Smiley"
-        emoji3.definition = "a cool person"
+        emoji3.category = "Animal"
+        emoji3.definition = "panda face"
         
         let emoji4 = Emoji()
         emoji4.stringEmoji = "😂"
@@ -79,10 +79,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         emoji4.definition = "a person in tears from laughing too hard"
         
         let emoji5 = Emoji()
-        emoji5.stringEmoji = "😘"
+        emoji5.stringEmoji = "📱"
         emoji5.birthYear = 2014
-        emoji5.category = "Smiley"
-        emoji5.definition = "a person blowing a kiss "
+        emoji5.category = "Thing"
+        emoji5.definition = "a phone"
         
         return [emoji1,emoji2,emoji3,emoji4,emoji5]
         
